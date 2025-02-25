@@ -65,7 +65,7 @@ hr {
     color: #1abc9c;
 }
 
-.section-primary span {
+#name {
     color: #1abc9c;
     font-weight: bolder;
     opacity: 1;

@@ -88,7 +88,9 @@
                     <h2>Hakkımda</h2>
 
                     <hr>
-                    <p class="lead">Merhaba! Ben <span>Baki Akyol</span>. 21 yaşındayım ve TED Çorum Koleji'nden 2021'de
+                    <p class="lead">Merhaba! Ben <span id="name">Baki Akyol</span>. <span id="age"></span> yaşındayım ve
+                        TED Çorum
+                        Koleji'nden 2021'de
                         mezun oldum. Şu anda İstinye Üniversitesi Eczacılık Fakültesi'nde eğitim görüyorum. Aile
                         şirketimiz olan Akyol İnşaat'ta müteahitlikle de ilgileniyorum. Ancak, eczacılık alanında
                         kariyer yapmak ve insanların sağlığına katkıda bulunmak da benim için önemli bir hedef. Bu
@@ -164,8 +166,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <p>İletişim: <a href="mailto:info@bakiakyol.com"
-                            target="_blank">info@bakiakyol.com</a><br>
+                    <p>İletişim: <a href="mailto:info@bakiakyol.com" target="_blank">info@bakiakyol.com</a><br>
                 </div>
 
 
@@ -186,9 +187,7 @@
             </div><!-- /row -->
         </div><!-- /container -->
     </footer>
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- Bootstrap core JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
     </script>
     <script>
@@ -197,6 +196,13 @@
     <script src="js/bootstrap.min.js">
     </script>
     <script src="js/scripts.js">
+    </script>
+    <script>
+        function calculateAge(birthYear) {
+            const currentYear = new Date().getFullYear();
+            return currentYear - birthYear;
+        }
+        document.getElementById('age').textContent = calculateAge(2003);
     </script>
 </body>
 
